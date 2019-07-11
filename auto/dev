@@ -1,0 +1,13 @@
+#!/bin/bash -e
+# run ./auto/dev in commandline to make the docker thing?
+
+cd $(dirname $0)/..
+
+trap "docker-compose down --volumes --remove-orphans" 0
+docker-compose down --volumes --remove-orphans
+
+docker volume create --name ruby2.6-gem-cache > /dev/null
+
+docker-compose build dev
+docker-compose run --rm dev 'bundle check > /dev/null || flock $GEM_HOME bundle install'
+docker-compose run --rm dev "${@-bash}"

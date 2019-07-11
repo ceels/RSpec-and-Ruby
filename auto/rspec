@@ -1,0 +1,5 @@
+
+#!/bin/bash
+# run ./auto/rspec to make the docker and run the rspec
+
+$(dirname $0)/dev 'bundle exec rspec'

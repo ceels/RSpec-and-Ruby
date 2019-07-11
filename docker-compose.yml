@@ -1,0 +1,20 @@
+version: '2'
+
+volumes:
+  ruby2.6-gem-cache:
+    external: true
+
+services:
+  dev:
+    image: ruby:2.6.3
+    volumes:
+      - .:/app
+      - ruby2.6-gem-cache:/usr/local/bundle
+    environment:
+      AWS_SESSION_TOKEN:
+      AWS_DEFAULT_REGION:
+      AWS_SECRET_ACCESS_KEY:
+      AWS_ACCESS_KEY_ID:
+      AWS_SECURITY_TOKEN:
+    working_dir: /app
+    entrypoint: ["/bin/bash", "-c"]

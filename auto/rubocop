@@ -1,0 +1,6 @@
+
+#!/bin/bash
+# run ./auto/rubocop to make the docker thing happen and run rubocop
+# run ./auto/rubocop -a to auto cleanup
+
+$(dirname $0)/dev 'bundle exec rubocop'

@@ -1,0 +1,62 @@
+AllCops:
+  TargetRubyVersion: 2.6
+
+require:
+  - rubocop/formatter/emoji_formatter
+  - rubocop-rspec
+
+Metrics/BlockLength:
+  Exclude:
+     - 'spec/**/*.rb'
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/ClassLength:
+  Max: 130
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 15
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: false
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: false
+
+Layout/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
+
+Style/Documentation:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+# https://github.com/nevir/rubocop-rspec/issues/62
+RSpec/FilePath:
+  Enabled: false
+
+RSpec/MessageExpectation:
+  Enabled: false
+
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+
+RSpec/NestedGroups:
+  Max: 3
+
+# TODO: it'd be great to enable this, in future we should turn it on as we deem possible.
+RSpec/VerifiedDoubles:
+  Enabled: false
+
+  # link to the coniguration info https://github.com/rubocop-hq/rubocop/blob/master/manual/configuration.md
