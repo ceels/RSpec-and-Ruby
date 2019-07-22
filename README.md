@@ -1,6 +1,7 @@
 # RSpec-and-Ruby
 
-I'm putting together a repo for a friend so she can have a go at teaching herself Ruby and RSpec. I'm using material from two repos - [alexch's learn_ruby](https://github.com/alexch/learn_ruby) and [ultrasaurus' test-first-teaching](https://github.com/ultrasaurus/test-first-teaching)
+I'm putting together a repo for a friend so she can have a go at teaching herself Ruby and RSpec.
+I'm using material from two repos - [alexch's learn_ruby](https://github.com/alexch/learn_ruby) and [ultrasaurus' test-first-teaching](https://github.com/ultrasaurus/test-first-teaching).
 
 To get started you need to have git installed on your command line.
 
@@ -44,4 +45,14 @@ and run
 ./auto/dev
 ```
 
-in your command line
+in your command line. This puts you inside the docker container(?)
+
+if you get 'permission denied: ./auto/dev'
+
+run
+
+```
+chmod +ux ./auto/dev
+```
+
+Now go to '00_hello_instructions.md' to start the exercises.
