@@ -55,4 +55,4 @@ run
 chmod +ux ./auto/dev
 ```
 
-Now go to [the first lot of instructions](00_hello_instructions.md) to start the exercises.
+Now go to [the first lot of instructions](./instructions/00_hello_instructions.md) to start the exercises.
