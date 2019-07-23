@@ -29,7 +29,8 @@ Finished in 0.00041 seconds (files took 0.12848 seconds to load)
 0 examples, 0 failures, 1 error occurred outside of examples
 ```
 
-Your first step is make the file '00_hello.rb' in the 'lib' directory.
+It 'cannot load such file' because it doesn't exist yet. Your first step is to
+make the file '00_hello.rb' in the 'lib' directory.
 
 Once you have done that run
 
@@ -38,3 +39,45 @@ rspec
 ```
 
 The error should change!
+
+```
+Failures:
+
+  1) Hello the hello function says hello
+     Failure/Error: expect(hello).to eq('Hello!')
+
+     NameError:
+       undefined local variable or method `hello' for #<RSpec::ExampleGroups::Hello::TheHelloFunction:0x0000556bc9bd6200>
+     # ./spec/00_hello_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+Finished in 0.00143 seconds (files took 0.09722 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/00_hello_spec.rb:14 # Hello the hello function says hello
+```
+
+In this example, you have 'undefined local variable or method 'hello'', so the
+next step is to define (def?) 'hello'.
+
+You'll know if you've been successful if the error changes!
+
+```
+Failures:
+
+  1) Hello the greet function says hello to someone
+     Failure/Error: expect(greet('Alice')).to eq('Hello, Alice!')
+
+     NoMethodError:
+       undefined method `greet' for #<RSpec::ExampleGroups::Hello::TheGreetFunction:0x00005593a271eae0>
+     # ./spec/00_hello_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+Finished in 0.0031 seconds (files took 0.12484 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/00_hello_spec.rb:20 # Hello the greet function says hello to someone
+
+```
