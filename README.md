@@ -21,7 +21,7 @@ no brew?
 
 [find out how to install homebrew]
 
-you'll also need Docker Compose
+you'll also need to get [started with Docker](https://docs.docker.com/docker-for-mac/) and put Docker Compose on your computer
 
 ```
 brew install docker-compose
