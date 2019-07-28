@@ -35,7 +35,7 @@ brew install docker-compose
 After that, you need to clone the git repo onto your computer.
 
 ```
-git clone git@github.com:colquhounking/RSpec-and-Ruby.git
+git clone https://github.com/colquhounking/RSpec-and-Ruby
 ```
 
 Then go in to the directory you just made
@@ -50,14 +50,9 @@ and run
 ./auto/dev
 ```
 
-in your command line. This puts you inside the docker container(?)
+in your command line. This puts you inside the docker container(?). It will down load a whole lot of 
+things that you'll only have to download the first time. If you were to exit and run the command again,
+ it would be much faster
 
-if you get 'permission denied: ./auto/dev'
-
-run
-
-```
-chmod +ux ./auto/dev
-```
 
 Now go to [the first lot of instructions](./instructions/00_hello_instructions.md) to start the exercises.
