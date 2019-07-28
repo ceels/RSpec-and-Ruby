@@ -17,11 +17,16 @@ If not, install it by typing
 brew install git
 ```
 
-no brew?
+no brew? You'll need to install that too. I did it [from this site](https://brew.sh/) and I don't a hundred
+percent know what the command I copied and pasted does, but people I trust told me it was okay.
 
-[find out how to install homebrew]
+you'll also need to get [started with Docker](https://docs.docker.com/docker-for-mac/) and put Docker Compose
+ on your computer. If you didn't have Docker, you probably won't have Docker Compose, but you can check in 
+ the same way 
 
-you'll also need to get [started with Docker](https://docs.docker.com/docker-for-mac/) and put Docker Compose on your computer
+ ```
+docker-compose --version
+```
 
 ```
 brew install docker-compose
