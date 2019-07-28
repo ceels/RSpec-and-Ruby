@@ -6,7 +6,7 @@ volumes:
 
 services:
   dev:
-    image: ruby:2.6.3
+    image: ruby:2.6.3@sha256:a29bfc3b57e4f2cce2970611dd3a6310a316963d80b2bd40bb8698ea234144ab
     volumes:
       - .:/app
       - ruby2.6-gem-cache:/usr/local/bundle

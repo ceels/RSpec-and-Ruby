@@ -5,7 +5,7 @@ I'm using material from two repos - [alexch's learn_ruby](https://github.com/ale
 
 To get started you need to have git installed on your command line.
 
-Check if it is there by typing
+Check if it is there by typing (into the terminal)
 ```
 git --version
 ```

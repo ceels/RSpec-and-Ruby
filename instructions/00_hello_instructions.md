@@ -29,7 +29,7 @@ Finished in 0.00041 seconds (files took 0.12848 seconds to load)
 0 examples, 0 failures, 1 error occurred outside of examples
 ```
 
-It 'cannot load such file' because it doesn't exist yet. Your first step is to
+It 'cannot load such file' because the file doesn't exist yet. Your first step is to
 make the file '00_hello.rb' in the 'lib' directory.
 
 Once you have done that run
