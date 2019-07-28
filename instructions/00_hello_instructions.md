@@ -5,7 +5,7 @@ then write the code that will make it pass. This even includes making the file t
 
 If you have run ./auto/dev you'll be 'inside' the docker (image?).
 
-Type
+After the 'app#' type
 
 ```
 rspec
@@ -30,7 +30,9 @@ Finished in 0.00041 seconds (files took 0.12848 seconds to load)
 ```
 
 It 'cannot load such file' because it doesn't exist yet. Your first step is to
-make the file '00_hello.rb' in the 'lib' directory.
+make the file '00_hello.rb' in the 'lib' directory. Probably at this stage, the easiest thing
+to do is to open the repo you downloaded in an editor. You will need something like 
+[Sublime](https://www.sublimetext.com/3) or [Atom](https://atom.io/). You
 
 Once you have done that run
 
@@ -58,8 +60,12 @@ Failed examples:
 rspec ./spec/00_hello_spec.rb:14 # Hello the hello function says hello
 ```
 
-In this example, you have 'undefined local variable or method 'hello'', so the
+It would be worth taking time to look at the differences between the errors. But the main
+thing do focus on here is that you have 'undefined local variable or method 'hello'', so the
 next step is to define (def?) 'hello'.
+
+Go to the file you just created in lib '00_hello.rb' and define 'hello'. If you need a hint on how to do this
+try [this site](http://ruby-for-beginners.rubymonstas.org/writing_methods/definition.html), or googling how to define something in Ruby.
 
 You'll know if you've been successful if the error changes!
 
