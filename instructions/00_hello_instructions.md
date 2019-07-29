@@ -64,7 +64,7 @@ It is worth taking time to look at the differences between the errors. But the m
 thing do focus on here is that you have 'undefined local variable or method 'hello'',
 so the next step is to define (def?) 'hello'.
 
-First, open up [00_hello_spec](./RSpec-and-Ruby/spec/00_hello_spec.rb) this file has the RSpec tests
+First, open up 00_hello_spec.rb in the 'spec' folder. This file has the RSpec tests
 and has some instructions at the top that may help.
 
 Once you have done that go to the file you just created in lib '00_hello.rb' and
