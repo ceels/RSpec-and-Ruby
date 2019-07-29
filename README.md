@@ -17,11 +17,16 @@ If not, install it by typing
 brew install git
 ```
 
-no brew?
+no brew? You'll need to install that too. I did it [from this site](https://brew.sh/) and I don't a hundred
+percent know what the command I copied and pasted does, but people I trust told me it was okay.
 
-[find out how to install homebrew]
+you'll also need to get [started with Docker](https://docs.docker.com/docker-for-mac/) and put Docker Compose
+ on your computer. If you didn't have Docker, you probably won't have Docker Compose, but you can check in 
+ the same way 
 
-you'll also need Docker Compose
+ ```
+docker-compose --version
+```
 
 ```
 brew install docker-compose
@@ -30,7 +35,7 @@ brew install docker-compose
 After that, you need to clone the git repo onto your computer.
 
 ```
-git clone git@github.com:colquhounking/RSpec-and-Ruby.git
+git clone https://github.com/colquhounking/RSpec-and-Ruby
 ```
 
 Then go in to the directory you just made
@@ -45,14 +50,9 @@ and run
 ./auto/dev
 ```
 
-in your command line. This puts you inside the docker container(?)
+in your command line. This puts you inside the docker container(?). It will down load a whole lot of 
+things that you'll only have to download the first time. If you were to exit and run the command again,
+ it would be much faster
 
-if you get 'permission denied: ./auto/dev'
-
-run
-
-```
-chmod +ux ./auto/dev
-```
 
 Now go to [the first lot of instructions](./instructions/00_hello_instructions.md) to start the exercises.
