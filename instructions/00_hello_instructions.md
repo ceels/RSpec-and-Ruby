@@ -91,4 +91,4 @@ Failed examples:
 rspec ./spec/00_hello_spec.rb:20 # Hello the greet function says hello to someone
 
 ```
-If you're not sure what to do next. Try working through this [Ruby Monk exercise](https://rubymonk.com/learning/books/1-ruby-primer/chapters/19-ruby-methods/lessons/69-new-lesson)
+If you're not sure what to do next. Try working through this [Ruby Monk exercise](https://rubymonk.com/learning/books/1-ruby-primer/chapters/19-ruby-methods/lessons/69-new-lesson).
