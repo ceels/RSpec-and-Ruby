@@ -4,11 +4,11 @@ I'm putting together a repo for a friend so she can have a go at teaching hersel
 I'm using material from two repos - [alexch's learn_ruby](https://github.com/alexch/learn_ruby) and [ultrasaurus' test-first-teaching](https://github.com/ultrasaurus/test-first-teaching).
 
 This tool is aimed at people who already know some Ruby and want to know more
-about RSpec and TDD. 
+about RSpec and TDD.
 
 To get started you need to have git installed on your command line.
 
-Check if it is there by typing (into the terminal)
+Check if it is there by typing
 ```
 git --version
 ```
