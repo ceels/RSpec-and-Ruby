@@ -9,9 +9,11 @@ about RSpec and TDD.
 To get started you need to have git installed on your command line.
 
 Check if it is there by typing
+
 ```
 git --version
 ```
+
 in your terminal after the $
 
 If not, install it by typing
@@ -24,10 +26,10 @@ no brew? You'll need to install that too. I did it [from this site](https://brew
 percent know what the command I copied and pasted does, but people I trust told me it was okay.
 
 you'll also need to get [started with Docker](https://docs.docker.com/docker-for-mac/) and put Docker Compose
- on your computer. If you didn't have Docker, you probably won't have Docker Compose, but you can check in
- the same way
+on your computer. If you didn't have Docker, you probably won't have Docker Compose, but you can check in
+the same way
 
- ```
+```
 docker-compose --version
 ```
 
@@ -55,7 +57,6 @@ and run
 
 in your command line. This puts you inside the docker container(?). It will down load a whole lot of
 things that you'll only have to download the first time. If you were to exit and run the command again,
- it would be much faster
-
+it would be much faster
 
 Now go to [the first lot of instructions](./instructions/00_hello_instructions.md) to start the exercises.
